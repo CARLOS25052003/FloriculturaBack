@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    120deg,
+    rgba(173, 216, 230, 0.5),
+    rgba(255, 182, 193, 0.5),
+    rgba(144, 238, 144, 0.5)
+  );
+  width: 100%;
+  background-size: cover;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+  background: linear-gradient(to right,
+  rgba(144, 224, 239, 0.8), /* Azul claro */
+  rgba(176, 224, 230, 0.8), /* Azul pastel */
+  rgba(255, 192, 203, 0.8), /* Rosa claro */
+  rgba(255, 228, 225, 0.8)  /* Rosa pastel */
+  );
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabeçalho__butoes {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.cabeçalho h1 {
+  font-family: "Dancing Script", cursive;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.9em;
+  color: #333;
+  font-weight: bold;
+
+}
+
+.cabeçalho h1 img {
+  margin-right: 10px;
+  height: 40px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.butoes {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 8px;
+  user-select: none;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.1em;
+  font-weight: 500;
+  background-color: rgba(144, 224, 239, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.butoes img {
+  margin-right: 8px;
+  height: 20px;
+  width: auto;
+}
+
+.butoes:hover {
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.butoes:active {
+  transform: scale(0.98);
+}
+.cabeçalho__extras {
+  display: flex;
+  align-items: center;
+}
+
+.cabeçalho__extras__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  font-size: 1.1em;
+  font-weight: 500;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cabeçalho__extras__item img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.cabeçalho__extras__item:hover {
+  background-color: rgba(144, 224, 239, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cabeçalho__extras__item:active {
+  transform: scale(0.98);
+}
+/* Estilo da barra de navegação */
+.navbar {
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  position: relative;
+}
+
+.navbar__link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: #ff6f61; /* Destaque ao passar o mouse */
+}
+
+/* Estilo do dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.navbar__item:hover .dropdown {
+  display: block;
+}
+
+.dropdown__link {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  transition: background 0.3s ease;
+}
+
+.dropdown__link:hover {
+  background-color: #ff6f61; /* Cor de destaque ao passar o mouse */
+  color: #fff;
+}
+.produto-detalhes {
+  display: flex;
+  flex-direction: column; /* Alterado para coluna */
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  margin: auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.produto-detalhes__imagem img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.produto-detalhes__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.produto-detalhes__ranking {
+  font-size: 1rem;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.produto-detalhes__preco {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 1.8rem;
+}
+
+.produto__preco--original {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.produto__preco--desconto {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.produto-detalhes__desconto {
+  font-size: 1rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.produto-detalhes__descricao {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.produto-detalhes__quantidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.produto-detalhes__quantidade input {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.produto-detalhes__comprar {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.produto-detalhes__comprar:hover {
+  background-color: #1e8449;
+}
+
+/* Estilos para as avaliações */
+.produto-detalhes__avaliacoes {
+  margin-top: 40px; /* Ajuste o espaçamento para ficar bem posicionado abaixo do produto */
+  width: 100%;
+  text-align: left;
+}
+
+.produto-detalhes__avaliacao {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.produto-detalhes__avaliacao__usuario {
+  font-weight: bold;
+}
+
+.produto-detalhes__avaliacao__nota {
+  color: #f39c12; /* Cor das estrelas */
+}
+
+/* Formulário para nova avaliação */
+.produto-detalhes__nova-avaliacao {
+  margin-top: 20px;
+}
+
+.produto-detalhes__nova-avaliacao textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.produto-detalhes__enviar-avaliacao {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.produto-detalhes__enviar-avaliacao:hover {
+  background-color: #45a049;
+}

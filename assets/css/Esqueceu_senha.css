@@ -1,0 +1,27 @@
+body {
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.forgot-password-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.btn-block {
+  margin-top: 20px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Florishop </title>
+  <link rel="icon" href="../assets/img/plant.svg">
+  <link rel="stylesheet" href="../assets/css/login.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="cabeçalho">
+  <h1><img src="../assets/img/logo.svg" alt="logo">Florishop</h1>
+  <section class="cabeçalho__butoes">
+    <a class="butoes" href="/index.html"><img src="../assets/img/home.svg" alt="Home">Home</a>
+    <a class="butoes" href="../pages/lojinha.html"><img src="../assets/img/loja.svg" alt="Lojinha">Lojinha</a>
+    <a class="butoes" href="../pages/biografia.html"><img src="../assets/img/create.svg" alt="Biografia">Biografia</a>
+    <a class="butoes" href="../pages/termos.html"><img src="../assets/img/contact.svg" alt="Termos">Termos</a>
+  </section>
+  <section class="cabeçalho__extras">
+    <a href="../pages/carrinho.html" class="cabeçalho__extras__item">
+      <img src="../assets/img/cart.png" alt="Carrinho">
+      <span>Carrinho</span>
+    </a>
+    <a href="../pages/login.html" class="cabeçalho__extras__item">
+      <img src="../assets/img/login.png" alt="Login">
+      <span>Login</span>
+    </a>
+  </section>
+</header>
+<main>
+  <div id="alert-container" class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 1050;"></div>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 p-0">
+    <div class="row w-100 justify-content-center mx-2">
+      <!-- Lado esquerdo (Logo e imagem) -->
+      <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center p-4">
+        <h1 class="display-4 font-weight-bold text-dark">Florishop</h1>
+        <p class="lead text-dark">Faça login e continue suas compras de flores favoritas. Estamos felizes em te ver de volta!</p>
+        <img src="../assets/img/rosasbrancas.png" alt="Imagem de flores" class="img-fluid rounded shadow-lg" style="max-height: 300px;">
+      </div>
+
+      <!-- Lado direito (Formulário de login) -->
+      <div class="col-md-6 col-lg-4 bg-white rounded p-4 shadow-lg">
+        <h2 class="text-center text-dark mb-4">Login</h2>
+        <form>
+          <div class="form-group">
+            <label for="email" class="font-weight-bold">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password" class="font-weight-bold">Senha</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-danger btn-block mt-4">Entrar</button>
+        </form>
+        <div class="text-center mt-3">
+          <p class="mb-0">Ainda não tem uma conta? <a href="../pages/registro.html" class="text-danger font-weight-bold">Cadastre-se aqui</a></p>
+          <p class="mt-2"><a href="../pages/Esqueceu_senha.html" class="text-danger font-weight-bold">Esqueceu a senha?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__info">
+    <nav class="footer__links">
+      <a href="../pages/termos.html" class="footer__link">Termos de Uso</a>
+      <a href="../pages/termos.html" class="footer__link">Devoluções e Reembolsos</a>
+      <a href="../pages/termos.html" class="footer__link">SAC</a>
+      <a href="../pages/biografia.html" class="footer__link">Quem Somos</a>
+      <a href="../pages/termos.html" class="footer__link">Política de Privacidade</a>
+      <a href="../pages/termos.html" class="footer__link">Política de Cookies</a>
+    </nav>
+    <p class="footer__company">Minda Florishop MFP - MY | CNPJ: 22.495.412/0201-00</p>
+    <p class="footer__address">Jatuaraná - Coab - Porto Velho - Rondonia - RO - 56.445-121</p>
+    <p class="footer__contact">Email: <a href="mailto:florishop@outlook.com.br">florishop@outlook.com.br</a> | Telefone: (69) 8994-4642</p>
+    <p class="footer__whatsapp">WhatsApp: (69) 8994-4642</p>
+  </div>
+</footer>
+<script src="../assets/javas/login.js"></script>
+<!-- jQuery (necessário para o Bootstrap JS) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Popper.js (necessário para alguns componentes do Bootstrap) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

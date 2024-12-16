@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/produto.css">
+  <title>Detalhes do Produto</title>
+</head>
+<body>
+<header class="cabeçalho">
+  <section class="cabeçalho__butoes">
+    <h1><img class="" src="../assets/img/logo.svg" alt="logo">Florishop</h1>
+    <nav class="alguma">
+      <a href="/index.html" class="butoes">
+        <img class="butoes__img" src="../assets/img/home.svg" alt="icone de home">
+        Home
+      </a>
+      <a href="../pages/lojinha.html" class="butoes">
+        <img class="butoes__img" src="../assets/img/loja.svg" alt="icone de home">
+        Lojinha
+      </a>
+      <a href="../pages/biografia.html" class="butoes">
+        <img class="butoes__img" src="../assets/img/create.svg" alt="icone de home">
+        Biografia
+      </a>
+      <a href="../pages/termos.html" class="butoes">
+        <img class="butoes__img" src="../assets/img/contact.svg" alt="icone de home">
+        Termos
+      </a>
+    </nav>
+  </section>
+  <section class="cabeçalho__extras">
+    <a href="../pages/carrinho.html" class="cabeçalho__extras__item">
+      <img src="../assets/img/cart.png" alt="Carrinho">
+      <span>Carrinho</span>
+    </a>
+    <a href="../pages/login.html" class="cabeçalho__extras__item">
+      <img src="../assets/img/login.png" alt="Login">
+      <span>Login</span>
+    </a>
+  </section>
+</header>
+
+<nav class="navbar">
+  <ul class="navbar__list">
+    <li class="navbar__item">
+      <a class="navbar__link" href="#">TIPOS DE FLORES</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="#">ORQUÍDEA</a>
+        <a class="dropdown__link" href="#">ROSA</a>
+        <a class="dropdown__link" href="#">ASTROMÉLIA</a>
+        <a class="dropdown__link" href="#">GIRASSOL</a>
+        <a class="dropdown__link" href="#">TULIPAS</a>
+        <a class="dropdown__link" href="#">VIOLETAS</a>
+        <a class="dropdown__link" href="#">LÍRIO</a>
+      </div>
+    </li>
+    <li class="navbar__item"><a class="navbar__link" href="#">BUQUÊ DE FLORES</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="#">CLÁSSICO</a>
+        <a class="dropdown__link" href="#">ROMÂNTICO</a>
+        <a class="dropdown__link" href="#">MISTA</a>
+        <a class="dropdown__link" href="#">CASAMENTO</a>
+        <a class="dropdown__link" href="#">LUXOSO</a>
+        <a class="dropdown__link" href="#">PROMOCIONAL</a>
+      </div>
+    </li>
+    <li class="navbar__item"><a class="navbar__link" href="#">ARRANJOS</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="#">CLÁSSICO</a>
+        <a class="dropdown__link" href="#">MISTA</a>
+        <a class="dropdown__link" href="#">COMBOS</a>
+        <a class="dropdown__link" href="#">LUXOSO</a>
+        <a class="dropdown__link" href="#">PROMOCIONAL</a>
+      </div>
+    </li>
+    <li class="navbar__item"><a class="navbar__link" href="#">CESTAS DE PRESENTE</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="#">CESTA DE CHOCOLATE</a>
+        <a class="dropdown__link" href="#">CESTA DE FLORES</a>
+        <a class="dropdown__link" href="#">CESTA DE PELUCIA </a>
+        <a class="dropdown__link" href="#">CESTA DE VINHO</a>
+        <a class="dropdown__link" href="#">CESTA DE CAFÉ DA MANHÃ</a>
+      </div>
+    </li>
+    <li class="navbar__item"><a class="navbar__link" href="#">VASOS DE FLORES</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="#">ORQUÍDEA</a>
+        <a class="dropdown__link" href="#">ROSA</a>
+        <a class="dropdown__link" href="#">ASTROMÉLIA</a>
+        <a class="dropdown__link" href="#">GIRASSOL</a>
+        <a class="dropdown__link" href="#">TULIPAS</a>
+        <a class="dropdown__link" href="#">VIOLETAS</a>
+        <a class="dropdown__link" href="#">LÍRIO</a>
+        <a class="dropdown__link" href="#">MISTAS</a>
+      </div>
+    </li>
+    <li class="navbar__item"><a class="navbar__link" href="#">CIDADES</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="#">SÃO PAULO</a>
+        <a class="dropdown__link" href="#">RIO DE JANEIRO</a>
+        <a class="dropdown__link" href="#">RONDONIA</a>
+        <a class="dropdown__link" href="#">ACRE</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<main class="produto-detalhes">
+  <section class="produto-detalhes__imagem">
+    <img id="produtoImagem" alt="Imagem do Produto" src="../assets/img/buque-de-flores-bleissima.png">
+  </section>
+
+  <section class="produto-detalhes__info">
+    <h2 id="produtoNome">Orquídea</h2>
+    <p class="produto-detalhes__ranking" id="produtoRanking"></p>
+
+    <div class="produto-detalhes__preco">
+      <span class="produto__preco--original" id="produtoPrecoOriginal">R$ 65,90</span>
+      <span class="produto__preco--desconto" id="produtoPreco">R$ 59,90</span>
+    </div>
+
+    <p class="produto-detalhes__desconto" id="produtoDesconto"></p>
+
+    <div class="produto-detalhes__descricao">
+      <p id="produtoDescricao">
+        Descrição do Produto: Esta orquídea é perfeita para presentear em qualquer ocasião.
+        Com sua beleza única e elegante, ela é a 1ª mais vendida e encantará quem a receber.
+      </p>
+    </div>
+
+    <div class="produto-detalhes__quantidade">
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
+    </div>
+
+    <button class="produto-detalhes__comprar">Adicionar ao Carrinho</button>
+  </section>
+  <!-- Seção de Avaliações e Comentários (Agora abaixo do produto) -->
+  <section class="produto-detalhes__avaliacoes">
+    <h3>Avaliações</h3>
+
+    <!-- Exemplo de classificação do produto -->
+    <div class="produto-detalhes__avaliacao">
+      <p class="produto-detalhes__avaliacao__usuario">João Silva</p>
+      <div class="produto-detalhes__avaliacao__nota">
+        <span>★★★★☆</span> <!-- 4 estrelas -->
+      </div>
+      <p class="produto-detalhes__avaliacao__comentario">
+        Produto maravilhoso! A orquídea chegou em ótimo estado e é ainda mais linda ao vivo.
+      </p>
+    </div>
+
+    <div class="produto-detalhes__avaliacao">
+      <p class="produto-detalhes__avaliacao__usuario">Maria Oliveira</p>
+      <div class="produto-detalhes__avaliacao__nota">
+        <span>★★★★★</span> <!-- 5 estrelas -->
+      </div>
+      <p class="produto-detalhes__avaliacao__comentario">
+        Superou as minhas expectativas! A entrega foi rápida e a flor é encantadora.
+      </p>
+    </div>
+
+    <!-- Formulário de Nova Avaliação -->
+    <div class="produto-detalhes__nova-avaliacao">
+      <h4>Deixe sua avaliação</h4>
+      <label for="nota">Classificação:</label>
+      <select id="nota" name="nota">
+        <option value="1">1 estrela</option>
+        <option value="2">2 estrelas</option>
+        <option value="3">3 estrelas</option>
+        <option value="4">4 estrelas</option>
+        <option value="5">5 estrelas</option>
+      </select>
+
+      <label for="comentario">Comentário:</label>
+      <textarea id="comentario" name="comentario" rows="4" placeholder="Escreva seu comentário aqui..."></textarea>
+
+      <button class="produto-detalhes__enviar-avaliacao">Enviar Avaliação</button>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/javas/produto.js"></script>
+</body>
+</html>

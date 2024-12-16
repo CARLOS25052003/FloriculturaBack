@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: linear-gradient(
+    120deg,
+    rgba(173, 216, 230, 0.5),
+    rgba(255, 182, 193, 0.5),
+    rgba(144, 238, 144, 0.5)
+  );
+  background-size: cover;
+  width: 100%;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+  background: linear-gradient(to right,
+  rgba(144, 224, 239, 0.8), /* Azul claro */
+  rgba(176, 224, 230, 0.8), /* Azul pastel */
+  rgba(255, 192, 203, 0.8), /* Rosa claro */
+  rgba(255, 228, 225, 0.8)  /* Rosa pastel */
+  );
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.cabeçalho__butoes {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.cabeçalho h1 {
+  font-family: "Dancing Script", cursive;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.9em;
+  color: #333;
+  font-weight: bold;
+
+}
+
+.cabeçalho h1 img {
+  margin-right: 10px;
+  height: 40px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.butoes {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 8px;
+  user-select: none;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.1em;
+  font-weight: 500;
+  background-color: rgba(144, 244, 239, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.butoes img {
+  margin-right: 8px;
+  height: 20px;
+  width: auto;
+}
+
+.butoes:hover {
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.butoes:active {
+  transform: scale(0.98);
+}
+.cabeçalho__extras {
+  display: flex;
+  align-items: center;
+}
+
+.cabeçalho__extras__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  font-size: 1.1em;
+  font-weight: 500;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cabeçalho__extras__item img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.cabeçalho__extras__item:hover {
+  background-color: rgba(144, 224, 239, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cabeçalho__extras__item:active {
+  transform: scale(0.98);
+}
+.sobre {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.sobre h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4caf50; /* Cor verde para destaque */
+}
+
+.sobre__conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sobre__conteudo p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.sobre__conteudo h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+  color: #4caf50; /* Cor verde para subtítulos */
+}
+
+.sobre__conteudo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sobre__conteudo ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.sobre__conteudo strong {
+  color: #4caf50; /* Destaque verde para termos importantes */
+}
+
+.sobre__conteudo a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.sobre__conteudo a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f5f5f5; /* Cor de fundo suave */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer__info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}
+
+.footer__company,
+.footer__address,
+.footer__contact,
+.footer__whatsapp {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.footer__contact a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}

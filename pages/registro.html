@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Florishop </title>
+  <link rel="icon" href="../assets/img/plant.svg">
+  <link rel="stylesheet" href="../assets/css/register.css">
+  <link href="../pageshttps://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="cabeçalho">
+  <h1><img src="../assets/img/logo.svg" alt="logo">Florishop</h1>
+  <section class="cabeçalho__butoes">
+    <a class="butoes" href="/index.html"><img src="../assets/img/home.svg" alt="Home">Home</a>
+    <a class="butoes" href="../pages/lojinha.html"><img src="../assets/img/loja.svg" alt="Lojinha">Lojinha</a>
+    <a class="butoes" href="../pages/biografia.html"><img src="../assets/img/create.svg" alt="Biografia">Biografia</a>
+    <a class="butoes" href="../pages/termos.html"><img src="../assets/img/contact.svg" alt="Termos">Termos</a>
+  </section>
+  <section class="cabeçalho__extras">
+    <a href="../pages/carrinho.html" class="cabeçalho__extras__item">
+      <img src="../assets/img/cart.png" alt="Carrinho">
+      <span>Carrinho</span>
+    </a>
+    <a href="../pages/login.html" class="cabeçalho__extras__item">
+      <img src="../assets/img/login.png" alt="Login">
+      <span>Login</span>
+    </a>
+  </section>
+</header>
+<main>
+  <!-- Container global para exibir alertas -->
+  <div id="alert-container" class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 1050;">
+    <!-- Aqui serão inseridos os alertas dinamicamente -->
+  </div>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 p-0">
+    <div class="row w-100 justify-content-center mx-2">
+      <!-- Lado esquerdo (Logo e imagem) -->
+      <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center p-4">
+        <h1 class="display-4 font-weight-bold text-dark">Florishop</h1>
+        <p class="lead text-dark">Crie uma conta para começar suas compras de flores! Vamos te ajudar a fazer as melhores escolhas.</p>
+        <img src="../assets/img/rosasbrancas.png" alt="Imagem de flores" class="img-fluid rounded shadow-lg" style="max-height: 300px;">
+      </div>
+
+      <!-- Lado direito (Formulário de registro) -->
+      <div class="col-md-6 col-lg-4 bg-white rounded p-4 shadow-lg">
+        <h2 class="text-center text-dark mb-4">Criar Conta</h2>
+        <form id="registroForm">
+          <div class="form-group">
+            <label for="full_name" class="font-weight-bold">Nome Completo</label>
+            <input type="text" id="full_name" name="full_name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="username" class="font-weight-bold">Usuário</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="font-weight-bold">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password" class="font-weight-bold">Senha</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm_password" class="font-weight-bold">Confirmar Senha</label>
+            <input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-danger btn-block mt-4">Registrar</button>
+        </form>
+        <div class="text-center mt-3">
+          <p class="mb-0">Já tem uma conta? <a href="../pages/login.html" class="text-danger font-weight-bold">Faça login aqui</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__info">
+    <nav class="footer__links">
+      <a href="../pages/termos.html" class="footer__link">Termos de Uso</a>
+      <a href="../pages/termos.html" class="footer__link">Devoluções e Reembolsos</a>
+      <a href="../pages/termos.html" class="footer__link">SAC</a>
+      <a href="../pages/biografia.html" class="footer__link">Quem Somos</a>
+      <a href="../pages/termos.html" class="footer__link">Política de Privacidade</a>
+      <a href="../pages/termos.html" class="footer__link">Política de Cookies</a>
+    </nav>
+    <p class="footer__company">Minda Florishop MFP - MY | CNPJ: 22.495.412/0201-00</p>
+    <p class="footer__address">Jatuaraná - Coab - Porto Velho - Rondonia - RO - 56.445-121</p>
+    <p class="footer__contact">Email: <a href="mailto:florishop@outlook.com.br">florishop@outlook.com.br</a> | Telefone: (69) 8994-4642</p>
+    <p class="footer__whatsapp">WhatsApp: (69) 8994-4642</p>
+  </div>
+</footer>
+<!-- jQuery (necessário para o Bootstrap JS) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Popper.js (necessário para alguns componentes do Bootstrap) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="../assets/javas/registro.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

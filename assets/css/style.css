@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --primary-color: #124948;
+  --secondary-color: #2E8B57;
+  --bg-color: #A9DFBF;
+  --highlight-color: #FF69B4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-size: cover;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+  background: linear-gradient(to right,
+  rgba(144, 224, 239, 0.8), /* Azul claro */
+  rgba(176, 224, 230, 0.8), /* Azul pastel */
+  rgba(255, 192, 203, 0.8), /* Rosa claro */
+  rgba(255, 228, 225, 0.8)  /* Rosa pastel */
+  );
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabeçalho__butoes {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.cabeçalho h1 {
+  font-family: "Dancing Script", cursive;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.9em;
+  color: #333;
+  font-weight: bold;
+
+}
+
+.cabeçalho h1 img {
+  margin-right: 10px;
+  height: 40px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.butoes {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 8px;
+  user-select: none;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.1em;
+  font-weight: 500;
+  background-color: rgba(144, 224, 239, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.butoes img {
+  margin-right: 8px;
+  height: 20px;
+  width: auto;
+}
+
+.butoes:hover {
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.butoes:active {
+  transform: scale(0.98);
+}
+.cabeçalho__extras {
+  display: flex;
+  align-items: center;
+}
+
+.cabeçalho__extras__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  font-size: 1.1em;
+  font-weight: 500;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cabeçalho__extras__item img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.cabeçalho__extras__item:hover {
+  background-color: rgba(144, 224, 239, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cabeçalho__extras__item:active {
+  transform: scale(0.98);
+}
+
+
+/* Seção de Apresentação */
+.apresentacao {
+  background-image: url("../img/6197867.png") ;
+  background-size: cover;
+  backgorund: url(../img/6197867.png);
+  background-repeat: no-repeat;
+  backgorund-position: center;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.apresentacao__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 20px;
+  background-image: url("../img/6197867.png") ;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.apresentacao__titulo {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.apresentacao__titulo__titulo {
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  background-color: rgba(173, 261, 230, 0.7);
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.titulo__texto {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.9em;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 10px;
+}
+.titulo__texto strong {
+  font-family: "Dancing Script", cursive;
+}
+.titulo__texto{
+  font-family: "Dancing Script", cursive;
+  color: var(--highlight-color);
+  font-weight: 700;
+}
+.subtitulos {
+  padding: 2%;
+  border: 10px solid transparent;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.meio-apresentação {
+  margin: 0 auto;
+  margin-top: -20px;
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right,
+  rgba(255, 182, 193, 0.6),
+  rgba(173, 261, 230, 0.6));
+  width: 30%;                  /* Define a largura para 80% da largura da tela */
+  max-width: 1200px;           /* Define um tamanho máximo (opcional) */
+}
+.apresentacao__subtitulos__titulo{
+ font-size: 2.5em;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: linear-gradient(to right,
+  rgba(72, 201, 176, 0.8),
+  rgba(52, 152, 219, 0.8),
+  rgba(231, 76, 60, 0.8),
+  rgba(243, 156, 18, 0.8));
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.apresentacao__subtitulo__texto__titulo{
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loja__apresentação {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right,
+  rgba(144, 224, 239, 0.5), /* Azul claro */
+  rgba(176, 224, 230, 0.6), /* Azul pastel */
+  rgba(255, 192, 203, 0.6), /* Rosa claro */
+  rgba(255, 228, 225, 0.6)  /* Rosa pastel */
+  );
+  gap: 10px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.apresentacao__subtitulo__textos {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+  color: #5559;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.imgens--loja {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.label {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background: linear-gradient(to right,
+  rgba(72, 201, 176, 0.8), /* Verde água intenso */
+  rgba(52, 152, 219, 0.8), /* Azul vibrante */
+  rgba(231, 76, 60, 0.8),  /* Vermelho suave */
+  rgba(243, 156, 18, 0.8)  /* Laranja quente */
+  );
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.botao-link {
+  background-color: rgba(255, 182, 193, 0.8);
+  color: #555555;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.botao-link:hover {
+  background-color: rgba(173, 261, 230, 0.8); /* Muda a cor no hover para um tom mais claro */
+  transform: scale(1.05);
+}
+.apresentacao__subtitulos {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.7em;
+  color: #555;
+
+  .apresentacao__subtitulo__texto p {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5em;
+    color: #555;
+
+  }
+}
+.cuidados {
+  background-color: rgba(255, 182, 193, 0.6); /* Cor suave, para combinar com o estilo anterior */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  max-width: 800px; /* Limita a largura do conteúdo */
+  margin: 40px auto; /* Centraliza o conteúdo na página */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+.apresentacao__subtitulos {
+  font-size: 2em;
+  font-family: "Dancing Script", cursive; /* Estilo de fonte suave e elegante */
+  color: #333;
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
+}
+
+.apresentacao__subtitulo__texto {
+  font-size: 1.2em;
+  color: #555; /* Cor de texto suave e discreta */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhorar a leitura */
+  text-align: justify; /* Justifica o texto para um alinhamento mais limpo */
+  font-family: Arial, sans-serif; /* Fonte simples e legível */
+}
+.locais {
+  background-color: rgba(173, 261, 230, 0.6); /* Cor suave, similar ao estilo anterior */
+  border-radius: 12px; /* Bordas arredondadas para suavizar o visual */
+  padding: 20px; /* Espaçamento interno para que o conteúdo não fique colado nas bordas */
+  max-width: 800px; /* Limita a largura do conteúdo */
+  margin: 40px auto; /* Centraliza o conteúdo com uma margem superior e inferior */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+.apresentacao__subtitulos {
+  font-size: 2em;
+  font-family: "Dancing Script", cursive; /* Fonte cursiva para um visual elegante */
+  color: #333; /* Cor escura para o título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
+}
+
+.apresentacao__subtitulo__texto {
+  font-size: 1.2em; /* Tamanho de fonte para o texto introdutório */
+  color: #555; /* Cor suave para o texto */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+  text-align: center; /* Centraliza o texto */
+  font-family: Arial, sans-serif; /* Fonte simples e legível */
+  margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.apresentacao__locais {
+  list-style-type: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o padding da lista */
+  margin: 0; /* Remove a margem da lista */
+}
+
+.endereçõs {
+  font-size: 1.2em; /* Tamanho de fonte para os itens da lista */
+  color: #444; /* Cor suave para o texto dos locais */
+  padding: 8px 0; /* Espaçamento entre os itens */
+  text-align: center; /* Alinha o texto ao centro */
+  font-family: "Arial", sans-serif; /* Fonte simples e legível */
+  border-bottom: 1px solid #ddd; /* Linha divisória entre os itens */
+}
+
+.endereçõs:last-child {
+  border-bottom: none; /* Remove a linha divisória do último item */
+}
+.footer {
+  background-color: #f5f5f5; /* Cor de fundo suave */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer__info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}
+
+.footer__company,
+.footer__address,
+.footer__contact,
+.footer__whatsapp {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.footer__contact a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}
