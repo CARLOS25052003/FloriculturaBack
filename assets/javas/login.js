@@ -4,6 +4,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value; // Alterado para 'password'
 
+
   const alertContainer = document.getElementById('alert-container');
 
   // Função para mostrar alertas
@@ -59,7 +60,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
     })
     .catch(error => {
       console.error('Erro ao enviar os dados:', error);
-      showAlert('Erro ao realizar o login. Tente novamente mais tarde.', 'danger');
+      showAlert('Erro ao realizar o login, senha ou email incorretos!', 'danger');
     });
 
 });

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Esqueceu a Senha</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/Esqueceu_senha.css"> <!-- Arquivo CSS separado -->
+  <link rel="stylesheet" href="../assets/css/Esqueceu_senha.css">
 </head>
 <body>
 
@@ -16,13 +16,17 @@
     </div>
     <div class="card-body">
       <p class="text-center">Digite o seu e-mail abaixo e enviaremos um link para redefinir sua senha.</p>
-      <form action="reset-password-action" method="POST">
+      <form id="forgot-password-form" method="POST">
         <div class="form-group">
           <label for="email">E-mail</label>
           <input type="email" id="email" name="email" class="form-control" placeholder="Seu e-mail" required>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Enviar Link de Redefinição</button>
+        <button type="submit" class="btn btn-primary btn-block" id="reset-button">Enviar Link de Redefinição</button>
       </form>
+
+      <!-- Área para mostrar mensagens de sucesso ou erro -->
+      <div id="message" style="display: none;" class="alert" role="alert"></div>
+
       <div class="text-center mt-3">
         <p>Voltar para <a href="../pages/login.html">Login</a></p>
       </div>
@@ -33,5 +37,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../assets/javas/esqueceu-senha.js"></script>
+
 </body>
 </html>
